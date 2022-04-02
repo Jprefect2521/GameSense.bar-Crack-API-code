@@ -1,0 +1,12 @@
+Starting Nmap 7.92
+Nmap scan report for gamesense.vip (185.11.145.5)
+Host is up (0.078s latency).
+rDNS record for 185.11.145.5: hosted-by.blazingfast.io
+Not shown: 96 closed tcp ports (reset)
+PORT    STATE    SERVICE
+23/tcp  filtered telnet
+25/tcp  filtered smtp
+80/tcp  open     http
+443/tcp open     https
+
+Nmap done: 1 IP address (1 host up) scanned in 1.86 seconds

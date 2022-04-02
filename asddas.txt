@@ -1,0 +1,49 @@
+Starting Nmap 7.92
+NSE: Loaded 5 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:15
+Completed NSE at 03:15, 0.57s elapsed
+Pre-scan script results:
+| dnslog-cn: 
+|   Domain: k5wehb.dnslog.cn
+|_  Manually retrieve: curl --cookie "PHPSESSID=j6eb7u3831s2eptkrn5b600gn0" http://dnslog.cn/getrecords.php
+Initiating Ping Scan at 03:15
+Scanning gamesense.vip (185.11.145.5) [4 ports]
+Completed Ping Scan at 03:15, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 03:15
+Completed Parallel DNS resolution of 1 host. at 03:15, 0.19s elapsed
+Initiating SYN Stealth Scan at 03:15
+Scanning gamesense.vip (185.11.145.5) [1000 ports]
+Discovered open port 80/tcp on 185.11.145.5
+Discovered open port 443/tcp on 185.11.145.5
+Completed SYN Stealth Scan at 03:15, 2.20s elapsed (1000 total ports)
+NSE: Script scanning 185.11.145.5.
+Initiating NSE at 03:15
+Completed NSE at 03:15, 1.38s elapsed
+Nmap scan report for gamesense.vip (185.11.145.5)
+Host is up (0.077s latency).
+rDNS record for 185.11.145.5: hosted-by.blazingfast.io
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE    SERVICE
+23/tcp  filtered telnet
+25/tcp  filtered smtp
+80/tcp  open     http
+443/tcp open     https
+
+Host script results:
+| dnslog-cn: 
+|   List of hosts responded: []
+|   Manually retrieve: curl --cookie "PHPSESSID=j6eb7u3831s2eptkrn5b600gn0" http://dnslog.cn/getrecords.php
+|_  If list is not empty, check hosts as they are potentially vulnerable
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:15
+Completed NSE at 03:15, 0.72s elapsed
+Post-scan script results:
+| dnslog-cn: 
+|   List of hosts responded: []
+|   Manually retrieve: curl --cookie "PHPSESSID=j6eb7u3831s2eptkrn5b600gn0" http://dnslog.cn/getrecords.php
+|_  If list is not empty, check hosts as they are potentially vulnerable
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 5.71 seconds
+           Raw packets sent: 1006 (44.240KB) | Rcvd: 999 (39.956KB)
